@@ -25,10 +25,10 @@ class _BallState extends State<Ball> {
       backgroundColor: Colors.blue,
       appBar: AppBar(
         backgroundColor: Colors.indigo,
-        title: Text('Ask Me Anything'),
+        title: Center(child: Text('Ask Me Anything')),
       ),
       body: Container(
-        child: Image.asset('images/ball1.png'),
+        child: Center(child: Image.asset('images/ball1.png')),
       ),
     );
   }
