@@ -9,7 +9,14 @@ void main() => runApp(
 class BallPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Ball();
+    return Scaffold(
+      backgroundColor: Colors.blue,
+      appBar: AppBar(
+        backgroundColor: Colors.indigo,
+        title: Center(child: Text('Ask Me Anything')),
+      ),
+      body: Ball(),
+    );
   }
 }
 
@@ -21,14 +28,9 @@ class Ball extends StatefulWidget {
 class _BallState extends State<Ball> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.blue,
-      appBar: AppBar(
-        backgroundColor: Colors.indigo,
-        title: Center(child: Text('Ask Me Anything')),
-      ),
-      body: Container(
-        child: Center(child: Image.asset('images/ball1.png')),
+    return Container(
+      child: Center(
+        child: Image.asset('images/ball1.png'),
       ),
     );
   }
